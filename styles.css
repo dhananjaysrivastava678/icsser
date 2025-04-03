@@ -1074,4 +1074,21 @@ display: inline-block;
     margin-top: 1.5rem;
     color: #676464;
 }
+@media (max-width: 768px){
+    #contactHeading{
+        margin-top: 2rem;
+        padding: 0 1.5rem;
+    }
+    #contactHeading h1{
+        font-family: Montserrat;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    #contactHeading p{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        color: #676464;
+        margin-bottom: 2rem;
+    }
+}
 
