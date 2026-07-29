@@ -29,15 +29,12 @@ html,body{
     background:rgb(179, 58, 58);
 }
 .brandLogo{
-
     width:120px;
-
+    max-width:120px;
     height:auto;
-
     display:block;
-
     object-fit:contain;
-
+    flex-shrink:0;
 }
 .navbar-brand{
 
@@ -532,13 +529,23 @@ html,body{
         display: unset;
     }
     .navBox{
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 10px 15px;
     }
     .navbar{
         padding: 0;
+        background: transparent;
+    }
+    .brandLogo{
+        width:70px;
+        max-width:70px;
+    }
+    .navbar-toggler{
+        flex-shrink:0;
     }
     #htextBox{
-        top: 50%;
+        top: 45%;
+        padding: 0 1.2rem;
     }
     #main img{
         width: 100%;
@@ -546,24 +553,29 @@ html,body{
         object-fit: cover;
         /* filter: blur(5.5px); */
     }
-    #htextBox h3{
-        font-size: 2rem;
+    #htextBox h1:first-of-type{
+        font-size: 1.6rem;
         font-family: Ubuntu;
+        letter-spacing: 0.1rem;
         font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
     }
-    #htextBox h1{
+    #htextBox h1:last-of-type{
         font-family: Bombshell;
-        font-size: 3.5rem;
-        letter-spacing: 0.18rem;
+        font-size: 2.6rem;
+        letter-spacing: 0.12rem;
         font-weight: 500;
-        margin-top: 1.2rem;
-        margin-bottom: 1.5rem;
+        margin-top: 0.3rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        word-break: break-word;
     }
     #htextBox p{
-        font-size: 2rem;
+        font-size: 1.1rem;
         font-family: Ubuntu;
-        margin-top: 15px;
-       
+        margin-top: 10px;
+        padding: 0 0.5rem;
     }
     #marque{
         margin-top: 3rem;
@@ -1264,4 +1276,52 @@ display: inline-block;
     font-size: 1.15rem;
     color: #555;
     border: 1px dashed #ccc;
+}
+@media (max-width: 768px){
+    .journalMain h1{
+        font-size: 1.8rem;
+        left: 5%;
+        max-width: 90%;
+    }
+    .journalMain p{
+        font-size: 1rem;
+        left: 5%;
+        max-width: 90%;
+    }
+    .journalContent{
+        padding: 2rem 1.25rem;
+    }
+    .journalContent h2{
+        font-size: 1.6rem;
+    }
+    .journalContent h4{
+        font-size: 1.2rem;
+    }
+    .journalContent p,
+    .journalContent ul{
+        font-size: 1rem;
+    }
+    .boardCard{
+        padding: 1.1rem 1.25rem;
+        margin-bottom: 1.1rem;
+    }
+    .boardCard h4{
+        font-size: 1.1rem;
+    }
+    .boardCard .memberDesignation,
+    .boardCard .memberInstitution,
+    .boardCard .memberEmail{
+        font-size: 0.95rem;
+        word-wrap: break-word;
+    }
+    .infoTable{
+        font-size: 0.95rem;
+    }
+    .infoTable td:first-child{
+        width: 40%;
+    }
+    .archiveNotice{
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
 }
