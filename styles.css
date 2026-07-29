@@ -26,7 +26,7 @@ html,body{
     align-items:center;
     justify-content:space-between;
     flex-wrap:nowrap;
-    background:transparent;
+    background:rgb(179, 58, 58);
 }
 .brandLogo{
 
@@ -85,7 +85,7 @@ html,body{
 } */
  #navLink{
 
-    color:white;
+    color:rgb(20, 223, 20);
 
     font-size:18px;
 
