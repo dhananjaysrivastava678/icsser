@@ -22,37 +22,77 @@ html,body{
     font-family: Ubuntu;
 }
 .navBox{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 1.3rem; */
-    background-color: #494a4a;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+    background:transparent;
 }
+.brandLogo{
+
+    width:120px;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+
+}
+.navbar-brand{
+
+    /* padding:0;
+
+    margin-right:60px; */
+}
+.navbar-nav{
+
+    margin-left:auto;
+
+    align-items:center;
+
+}
+
 /* .bar{
     padding: 25px;
 } */
-.navbar {
+/* .navbar {
     position: fixed;
-    /* padding:0 0 4.5rem; */
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 3px;
     font-family: Ubuntu;
+    z-index: 1000;
+} */
+ .navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:transparent;
+    padding:20px 35px;
 }
-.navbar-brand {
-    background: url('hgg.png') no-repeat center center;
-    background-size: contain;
-    height: 150px; /* Set a fixed height */
-    width: 150px; /* Adjust width as needed */
-}
+
 /* .navbar{
     padding:0 0 4.5rem;
 } */
- #navLink{
+ /* #navLink{
     font-size: 0.9rem;
     color: #fff;
+} */
+ #navLink{
+
+    color:white;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    font-weight:500;
+
 }
 /* .navbar-brand{
     font-size: 3.5rem;
@@ -1092,3 +1132,136 @@ display: inline-block;
     }
 }
 
+/* ===== ICSSER-IJMRI Section ===== */
+.navTwoLine{
+    display: inline-block;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+    max-width: 90px;
+}
+.journalMain{
+    height: 55%;
+    width: 100%;
+    background-color: #272b2a;
+    color: #fff;
+    background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.journalMain::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0,0,0,0.35);
+}
+.journalMain h1{
+    top: 40%;
+    left: 7%;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+.journalMain p{
+    top: 40%;
+    left: 7%;
+    position: relative;
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+    max-width: 60%;
+    margin-top: 1rem;
+}
+.journalContent{
+    padding: 5rem 7rem;
+}
+.journalContent h2{
+    font-family: Montserrat;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #272b2a;
+}
+.journalContent h4{
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #494a4a;
+}
+.journalContent p{
+    font-family: Ubuntu;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+.journalContent ul{
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #333;
+    padding-left: 1.5rem;
+}
+.infoTable{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.infoTable td{
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+.infoTable td:first-child{
+    font-weight: 600;
+    width: 30%;
+    color: #272b2a;
+}
+.boardCard{
+    background-color: #f6f6f6;
+    border-left: 4px solid #272b2a;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+.boardCard h4{
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 0 0 0.4rem 0;
+    color: #272b2a;
+}
+.boardCard .memberDesignation{
+    font-family: Ubuntu;
+    font-weight: 600;
+    color: #494a4a;
+    margin: 0.3rem 0;
+}
+.boardCard .memberInstitution{
+    font-family: Ubuntu;
+    font-style: italic;
+    color: #555;
+    margin: 0.2rem 0;
+}
+.boardCard .memberEmail{
+    font-family: Ubuntu;
+    color: #333;
+    margin-top: 0.4rem;
+}
+.archiveNotice{
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    padding: 2.5rem;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 1.15rem;
+    color: #555;
+    border: 1px dashed #ccc;
+}
